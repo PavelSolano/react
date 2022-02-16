@@ -1,0 +1,17 @@
+.TodoSerch{
+
+ 
+  margin: 0 124px;
+  width: 200px ;
+  height: 30px;
+  text-align: center;
+  border-radius: 4px;
+  color: black;
+  box-shadow: 0px 10px 13px -7px #000000, 27px 29px 15px -8px rgba(0,0,0,0.23);
+
+}
+
+  
+  .TodoSerch:focus {
+    outline-color: #61faad;
+  }
