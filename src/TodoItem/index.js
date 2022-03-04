@@ -2,31 +2,22 @@ import React from 'react';
 import './TodoItem.css';
 
 function TodoItem(props) {
-
-    const onComplete = () =>{
-        alert ('Has completado ' + props.text);
-
-    }
-
-    const onDelate = () =>{
-        alert ('Has eliminado ' + props.text);
-
-    }
   return (
     <li className="TodoItem">
       <span className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
        
-       onClick = {onComplete}
+       onClick = {props.onComplete}
        
       >
         √
-      </span>
+      </span>              
+      {/*  Existe una condificón y si propos.completed then todoItem-p--complete*/}
       <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
         {props.text}
       </p>
       <span className="Icon Icon-delete"
       
-      onClick = { onDelate}
+      onClick = {props.onDelete}
 
       >
         X
